@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/backgrnd_toss.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(76, 255, 61, 1);
+}
+
+/* TOP PART  */
+
+.exit{
+    background-color: rgba(76, 255, 61, 1);
+    color: black;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 0.5%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.exit h1{
+    font-size: 1.2em;
+    padding: 5%;
+    margin-left: 15%;
+}
+
+.top-part h1 {
+    font-size: 5em;
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+}
+
+/* NAME ENTERING PART  */
+
+.name-container{
+    text-align: center;
+    font-size: 1.5em;
+    width: 450px;
+    height: 250px;
+    background-color: rgba(30, 30, 30, 0.8);
+    padding-top: 30px ;
+    margin-left: 33%;
+    margin-top: 6%;
+}
+
+input{
+    width: 50%;
+    height: 30px;
+    margin-bottom: 4%;
+}
+
+/* BUTTON MODIFICATIONS */
+#submit{
+    background-color: rgba(243, 96, 96, 1);
+    padding: 1% ;
+    border-radius: 15px;
+    border: none;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+}
+
+#lets-go{
+    background-color: rgba(76, 255, 61, 1);
+    padding: 3%;
+    width: 100px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    border: none;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+/* BATTING OR BOWLING PART  */
+
+.toss{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.toss img{
+    width: 250px;
+    height: 200px;
+}
+
+.options{
+    cursor: pointer;
+}
+
+.options h1{
+    background-color: rgba(76, 255, 61, 1);
+    color: black;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    margin-top: -2%;
+    padding-top: 5px;
+}
+
+
+@media screen and (max-width:600px) {
+    .top-part h1 {
+        font-size: 3em;
+        text-align: center;
+        margin-top:4%;
+    }
+    
+    .name-container{
+        margin-left:15%;
+    }
+    .toss{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 6%;
+        margin-top: 6%;
+    }
+    .options{
+        margin-top: 7%;
+    }
+
+    .exit{
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+
+}

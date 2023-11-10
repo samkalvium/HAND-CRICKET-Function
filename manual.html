@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="assets/finlogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="top-part flex">
+        <img src="assets/left_heading.png" alt="logo">
+        <h1>Hand - Cricket</h1>
+        <img src="assets/right_heading.png" alt="logo">
+    </div>
+    <div class="instructions">
+        <p>
+        <h1>Instructions:- </h1>
+        1. Please enter your Name and your favorite Batsman’s name as your Nickname. <br>
+        2. Objective: Score as many runs as possible in one over (6 balls) without getting out. <br>
+        3. If your chosen number matches the computer's random choice, you are out. <br>
+        4. You will have 2 wickets. <br>
+        5. If your chosen number is different from the computer's choice, you score the runs you selected. <br>
+        6. If you are out, the game ends, and your final score is displayed.</p>
+    </div>
+    <div class="flexy">
+        <div id="play-button">
+            <h1>Go To Stadium</h1>
+        </div>
+        <div id="home">
+            <h1>Home</h1>
+        </div>
+    </div>
+    <div class="credits">
+        <p>Creator:-Samarth S Alva <br>
+            Proud Kalvian. <br>Made with 💚.
+        </p>
+    </div>
+
+    <script>
+        // MAKING GO TO STADIUM AND HOME BUTTON FUNCTIONAL
+
+        const stad = document.getElementById("play-button")
+        const home = document.getElementById("home")
+
+        home.addEventListener("click", () => {
+            window.location.href = "index.html"
+        })
+
+        stad.addEventListener("click", () => {
+            window.location.href = "toss.html"
+        })
+
+        window.addEventListener("load", () => {
+            let back = new Audio("assets/Cricket T20 Worldcup Scorecard Music.mp3")
+            back.play();
+            back.loop = true;
+        })
+
+    </script>
+</body>
+
+</html>

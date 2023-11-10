@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/backgrnd_toss.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(76, 255, 61, 1);
+}
+
+
+/* TOP PART  */
+.exit {
+    background-color: rgba(76, 255, 61, 1);
+    color: black;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 0.5%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.exit h1 {
+    font-size: 1.2em;
+    padding: 5%;
+    margin-left: 10%;
+}
+
+.top-part h1 {
+    font-size: 4em;
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+}
+
+.target{
+    color: white;
+    background-color: rgba(30, 30, 30, 0.8);
+    width: 200px;
+    font-size: 1.1em;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: flex;
+    padding: 0.5%;
+}
+
+.target h1{
+    margin-left:10%;
+}
+
+/* NAMES PART  */
+
+.flex-names {
+    display: flex;
+    justify-content: space-around;
+}
+
+.names {
+    text-align: center;
+    font-size: 1.5em;
+    width: 300px;
+    height: 80px;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: white;
+    padding-top: 0.5%;
+    margin-top: 2%;
+}
+
+
+
+/* SCORE PART  */
+.score-board {
+    text-align: center;
+    font-size: 1.5em;
+    width: 250px;
+    height: 130px;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: white;
+    padding-top: 0.5%;
+    margin-top: 2%;
+}
+.flex-runs{
+    width:250px ;
+    /* padding-left: 3.5em; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.hands img {
+    width: 150px;
+}
+
+/* MAIN PART STYLING  */
+.main-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-container img {
+    width: 300px;
+}
+
+.all-images {
+    width: 950px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+#img1 {
+    margin-top: -5%;
+}
+
+/* RESPONSIVE PART  */
+
+
+@media screen and (max-width:600px) {
+    .top-part h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    .exit {
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+
+    .names {
+        font-size: 0.5em;
+        padding-top: 1%;
+        margin-top: 3%;
+        width: 100px;
+        height: 30px;
+    }
+
+    .score-board {
+        font-size: 0.5em;
+        width: 100px;
+        height: 40px;
+        margin-top: 4%;
+    }
+
+    .hands img {
+        width: 200px;
+    }
+
+    .all-images {
+        margin-top: 10%;
+        margin-bottom: 6%;
+        margin-left: 8em;
+        width: 100px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3,100px);
+    }
+    
+}

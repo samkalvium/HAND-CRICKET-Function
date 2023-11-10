@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/backgrnd_manual.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(76, 255, 61, 1);
+}
+
+/* TOP_PART */
+
+.top-part img {
+    width: 300px;
+    margin-top: -50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Playpen+Sans:wght@200&display=swap');
+
+.top-part h1 {
+    font-size: 5em;
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* INSTRUCTIONS PART */
+
+.instructions {
+    margin-left: 100px;
+    margin-top: -40px;
+    font-size: 30px;
+}
+
+/* PLAY BUTTON  */
+#play-button {
+    background-color: rgba(76, 255, 61, 1);
+    color: black;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#home {
+    background-color: rgba(76, 255, 61, 1);
+    color: black;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#play-button h1 {
+    padding-top: 3%;
+}
+
+#home h1 {
+    padding-top: 3%;
+}
+
+
+.flexy {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+/* CREDIT  */
+
+.credits {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+
+/* RESPONSIVE PART  */
+
+@media screen and (max-width:600px) {
+
+    .top-part img {
+        width: 280px;
+        margin-top: 1px;
+    }
+
+    .top-part h1 {
+        width: 20em;
+        margin-top: 40px;
+        font-size: 35px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .instructions {
+        margin-left: 2em;
+        margin-top: 5em ;
+        font-size: 1.5em;
+        line-height: 150%;
+    }
+
+    #play-button {
+        margin-bottom: 12.5%;
+        margin-top: 50px;
+        margin-left: 180px;
+    }
+
+    .credits {
+        position: static;
+        margin-right: 30%;
+        margin-top: -6%;
+        margin-bottom: 6%;
+        /* text-align: right; */
+    }
+    .flexy{
+        width: 100px;
+    }
+}

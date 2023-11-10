@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: black;
+    color: rgba(76, 255, 61, 1);
+    background-image: url(assets/backgrnd-index.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TOP_PART */
+
+.top-part img{
+    width: 300px;
+    margin-top: -50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Playpen+Sans:wght@200&display=swap');
+.top-part h1{
+    font-size: 5em;
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* MAIN_PART */
+
+.main-part{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.main-part img{
+    width: 250px;
+    height: 200px;
+}
+
+/* STADIUM AND MANUAL TEXT  */
+.options {
+    cursor:pointer;
+}
+.options h1{
+    background-color:rgba(76, 255, 61, 1) ;
+    color: black;
+    height: 55px;
+    text-align: center;
+    margin-top: -4px;
+    padding-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* RESPONSIVE PART  */
+
+@media screen and (max-width:600px){
+    
+    .top-part img{
+        width: 280px;
+        margin-top: 1px;
+    }
+    .top-part h1{
+        width: 20em;
+        margin-top: 40px;
+        font-size: 2em;
+    }
+    .flex {
+        display: flex;
+    }
+
+    .main-part{
+        flex-direction: column;
+        height: 550px;
+        justify-content: space-around;
+        align-items:center;
+    }
+
+}
